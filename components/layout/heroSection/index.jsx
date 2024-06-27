@@ -7,23 +7,24 @@ function HeroSection() {
       <div className="absolute inset-0">
         <Image
           src="/images/Hero.png"
-          alt="Hero Image"
+          alt="Hero-Image"
           layout="fill"
           objectFit="cover"
           className="z-0"
+          aria-label="Hero Section Image"
         />
       </div>
 
       <div className="relative z-10 flex items-center justify-between w-[90%] p-4 border-b border-black">
         <div className="flex items-center space-x-4">
           <div className="flex items-center justify-center h-14 w-14 rounded-full bg-black">
-            <Image
+            {/* <Image
               src="/images/logo.png"
               alt="Logo"
               width={57}
               height={52}
               className="rounded-full"
-            />
+            /> */}
           </div>
           <h4 className="text-lg font-normal text-black">
             Université d’Alger 1 <br /> Faculté des sciences
