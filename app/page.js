@@ -2,10 +2,12 @@
 
 import ArchitectureSection from "@/components/layout/ArchitectureSection";
 import HeroSection from "@/components/layout/HeroSection";
+import InformatiqueSection from "@/components/layout/InformatiqueSection";
 import PresentationSection from "@/components/layout/PresentationSection";
 
 export default function Home() {
   return <div className="flex flex-col"><HeroSection />
     <PresentationSection />
-    <ArchitectureSection /></div>;
+    <ArchitectureSection />
+    <InformatiqueSection /></div>;
 }

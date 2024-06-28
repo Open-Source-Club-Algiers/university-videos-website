@@ -3,9 +3,9 @@ import React from "react";
 
 function ArchitectureSection() {
   return (
-    <section className=" bg-white relative z-0 mt-[40%] md:mt-[10%] flex flex-col justify-center items-center">
+    <section className=" bg-white relative z-0 mt-[130px] md:mt-[70px] flex flex-col justify-center items-center pb-5">
       <div className="flex justify-center items-center w-[100%]">
-        <h3 className="font-bold text-[26px] md:text-[35px]">
+        <h3 className="font-bold text-[26px] md:text-[35px] mt-6 mb-6">
           {" "}
           Département Architecture
         </h3>
