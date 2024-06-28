@@ -1,13 +1,12 @@
 import Image from "next/image";
 import React from "react";
 
-function ArchitectureSection() {
+function LeftVideoSection({ title, filiere, Specialite, videoLink = null }) {
   return (
     <section className=" bg-white relative z-0 mt-[130px] md:mt-[70px] flex flex-col justify-center items-center pb-5">
       <div className="flex justify-center items-center w-[100%]">
         <h3 className="font-bold text-[26px] md:text-[35px] mt-6 mb-6">
-          {" "}
-          Département Architecture
+          {title}
         </h3>
       </div>
       <div className="p-10 bg-black w-[95%] md:w-[80%] xl:w-[65%] h-[498px] ml-[13%] ">
@@ -29,8 +28,8 @@ function ArchitectureSection() {
               <p>Spécialité</p>
             </div>
             <div className=" w-[100%] flex flex-row items-center justify-around">
-              <p>Architecture</p>
-              <p>Architecture</p>
+              <p>{filiere}</p>
+              <p>{Specialite}</p>
             </div>
           </div>
         </div>
@@ -39,4 +38,4 @@ function ArchitectureSection() {
   );
 }
 
-export default ArchitectureSection;
+export default LeftVideoSection;

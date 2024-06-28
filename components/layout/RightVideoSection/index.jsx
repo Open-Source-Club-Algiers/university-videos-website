@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
 
-function InformatiqueSection() {
+function RightVideoSection({ title, filiere, Specialite, videoLink = null }) {
   return (
     <section className=" bg-black relative z-0  flex flex-col justify-center items-center pb-5">
       <div className="flex justify-center items-center w-[100%]">
         <h3 className="font-bold text-[26px] md:text-[35px] text-white mt-6 mb-6">
-          Département Informatique
+          {title}
         </h3>
       </div>
       <div className="p-10 bg-white w-[95%] md:w-[80%] xl:w-[65%] h-[498px] mr-[13%] ">
@@ -28,8 +28,8 @@ function InformatiqueSection() {
               <p>Spécialité</p>
             </div>
             <div className=" w-[100%] flex flex-row items-center justify-around">
-              <p>Architecture</p>
-              <p>Architecture</p>
+              <p>{filiere}</p>
+              <p>{Specialite}</p>
             </div>
           </div>
         </div>
@@ -38,4 +38,4 @@ function InformatiqueSection() {
   );
 }
 
-export default InformatiqueSection;
+export default RightVideoSection;
