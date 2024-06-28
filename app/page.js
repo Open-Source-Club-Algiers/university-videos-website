@@ -4,6 +4,7 @@ import LeftVideoSection from "@/components/layout/LeftVideoSection";
 import HeroSection from "@/components/layout/HeroSection";
 import PresentationSection from "@/components/layout/PresentationSection";
 import RightVideoSection from "@/components/layout/RightVideoSection";
+import FooterSection from "@/components/layout/FooterSection";
 
 export default function Home() {
   return <div className="flex flex-col"><HeroSection />
@@ -13,7 +14,7 @@ export default function Home() {
     <LeftVideoSection title={"Département Sciences de Matière"} filiere={"Département Sciences de Matière"} Specialite={"Département Sciences de Matière"} />
     <RightVideoSection title={"Département Mathématique"} filiere={"Département Mathématique"} Specialite={"Département Mathématique"} />
     <LeftVideoSection title={"Département Sciences de la Nature et de la Vie"} filiere={"snv"} Specialite={"snv"} />
-
+    <FooterSection />
 
   </div>;
 }

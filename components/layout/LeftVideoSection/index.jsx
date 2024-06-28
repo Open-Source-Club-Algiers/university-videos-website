@@ -24,12 +24,12 @@ function LeftVideoSection({ title, filiere, Specialite, videoLink = null }) {
           </p>
           <div className="flex flex-col items-start justify-between w-[90%]">
             <div className="w-[100%] flex flex-row items-start justify-around">
-              <p className="">Filière</p>
-              <p>Spécialité</p>
+              <p className=" text-white">Filière</p>
+              <p className=" text-white">Spécialité</p>
             </div>
             <div className=" w-[100%] flex flex-row items-center justify-around">
-              <p>{filiere}</p>
-              <p>{Specialite}</p>
+              <p className=" text-white">{filiere}</p>
+              <p className=" text-white">{Specialite}</p>
             </div>
           </div>
         </div>
