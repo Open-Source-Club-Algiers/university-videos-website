@@ -10,6 +10,9 @@ export default function Home() {
     <PresentationSection />
     <LeftVideoSection title={"Département Architecture"} filiere={"architecture"} Specialite={"Architecture"} />
     <RightVideoSection title={"Département Informatique"} filiere={"informatique"} Specialite={"informatique"} />
+    <LeftVideoSection title={"Département Sciences de Matière"} filiere={"Département Sciences de Matière"} Specialite={"Département Sciences de Matière"} />
+    <RightVideoSection title={"Département Mathématique"} filiere={"Département Mathématique"} Specialite={"Département Mathématique"} />
+    <LeftVideoSection title={"Département Sciences de la Nature et de la Vie"} filiere={"snv"} Specialite={"snv"} />
 
 
   </div>;
