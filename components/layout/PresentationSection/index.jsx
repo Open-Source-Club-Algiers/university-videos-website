@@ -3,7 +3,7 @@ import React from "react";
 
 function PresentationSection() {
   return (
-    <section className="h-full w-full bg-white relative z-0">
+    <section className=" bg-white relative z-0 h-full">
       <div className="bg-customBlue w-[90%] h-[152px] z-10 relative"></div>
 
       <div className="bg-black w-[90%] h-[640px] float-end z-20 translate-y-[-75px]">
@@ -41,7 +41,7 @@ function PresentationSection() {
         </div>
       </div>
       <div className="w-[100%] h-[250px] bg-customBlue z-0 absolute md:bottom-[-100px] bottom-[-150px] left-0 ">
-        <p className=" absolute right-[10%] bottom-9 text-start text-white text-inter font-medium  text-[12px] md:text-[15px] xl:text-[25px]">
+        <div className="absolute right-[10%] bottom-9 text-start text-white text-inter font-medium text-[12px] md:text-[15px] xl:text-[25px]">
           THE FACULTY OF SCIENCES IS PARTICULARLY <br />
           RESPONSIBLE FOR THE PROMOTION OF:
           <ul className="list-disc list-inside">
@@ -49,7 +49,7 @@ function PresentationSection() {
             <li>Support for development and social promotion</li>
             <li>Creation of a research platform</li>
           </ul>
-        </p>
+        </div>
       </div>
     </section>
   );
