@@ -17,14 +17,14 @@ function HeroSection() {
 
       <div className="relative z-10 flex items-center justify-between w-[90%] p-4 border-b border-black">
         <div className="flex items-center space-x-4">
-          <div className="flex items-center justify-center h-14 w-14 rounded-full bg-black">
-            {/* <Image
-              src="/images/logo.png"
+          <div className="flex items-center justify-center h-14 w-14 rounded-full bg-transparent">
+            <Image
+              src="/images/facLogo.jpg"
               alt="Logo"
               width={57}
               height={52}
               className="rounded-full"
-            /> */}
+            />
           </div>
           <h4 className="text-lg font-normal text-black">
             Université d’Alger 1 <br /> Faculté des sciences
