@@ -19,7 +19,7 @@ function RightVideoSection({
         </h3>
       </div>
       <div className="p-10 bg-white w-[95%] md:w-[80%] xl:w-[65%] md:h-[450px] h-[750px]  mr-[13%] ">
-        <div className=" bg-customGrey  h-[30%] md:h-auto w-[70%] md:w-[45%] rounded-[20px] absolute right-[20%] top-[22%] sm:top-[15%] md:top-auto md:right-[5%] bottom-12 flex justify-center items-center md:translate-y-[-50px]">
+        <div className=" bg-customGrey  h-[30%] md:h-[310px] w-[70%] md:w-[500px] rounded-[20px] absolute right-[20%] top-[22%] sm:top-[15%] md:top-auto md:right-[5%] bottom-12 flex justify-center items-center md:translate-y-[-50px]">
           <video
             width="100%"
             height="100%"
@@ -29,18 +29,20 @@ function RightVideoSection({
             <source src={videoLink} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+          <a
+            target="_blank"
+            href={docLink}
+            className="absolute  text-black md:bottom-[300px] bottom-[270px] right-[0]  md:left-0    px-4 py-2 "
+          >
+            <img
+              className="w-[30px] h-[30px] rounded-[5px] bg-white"
+              alt="getFileicon"
+              src="/images/fileIcon.png"
+            />
+            Download leaflet
+          </a>
         </div>
-        <a
-          target="_blank"
-          href={docLink}
-          className="absolute  top-[130px] left-0   text-white px-4 py-2 "
-        >
-          <img
-            className="w-[30px] h-[30px] rounded-[5px] bg-white"
-            alt="getFileicon"
-            src="/images/fileIcon.png"
-          />
-        </a>
+
         <div className="  relative translate-y-[30%] md:translate-y-0 md:float-left h-full flex justify-center items-center flex-col">
           <div className="flex flex-col items-start justify-between w-[90%] md:translate-y-0 translate-y-[-30px]  ">
             {licenceSpecialite && (

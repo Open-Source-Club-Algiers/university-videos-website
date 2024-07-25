@@ -16,35 +16,48 @@ function FooterSection() {
             sports activities.
           </h3>
         </div>
-        <div className="w-[95%] flex justify-center items-center">
+        <div className="w-[95%] flex justify-around items-center">
           {" "}
-          <img
-            alt="openSourceLogoIconm"
-            height={120}
-            width={120}
-            src={"/images/oscLogo.png"}
-          />{" "}
-          <img
-            alt="facebookicon"
-            height={100}
-            width={100}
-            className="rounded-[20px]"
-            src={"/images/hbcLogo.png"}
-          />{" "}
-          <img
-            alt="facebookicon"
-            height={100}
-            width={100}
-            className="rounded-[20px]"
-            src={"/images/quantaLogo.png"}
-          />{" "}
-          <img
-            alt="facebookicon"
-            height={90}
-            width={90}
-            className="rounded-[20px]"
-            src={"/images/archiLogo.png"}
-          />{" "}
+          <div className="flex items-center flex-col">
+            <img
+              alt="openSourceLogoIconm"
+              className="rounded-[30px] w-[50px] md:w-[80px]"
+              src={"/images/oscLogo.jpg"}
+            />{" "}
+            <p className="text-white  md:text-auto  md:font-semibold">
+              OPEN SOURCE
+            </p>
+          </div>{" "}
+          <div className="flex items-center flex-col">
+            <img
+              alt="facebookicon"
+              className="rounded-[30px] w-[50px] md:w-[80px]"
+              src={"/images/hbcLogo.jpg"}
+            />{" "}
+            <p className="text-white  md:text-auto  md:font-semibold">
+              HOPE BUDS CLUB
+            </p>
+          </div>{" "}
+          <div className="flex items-center flex-col">
+            <img
+              alt="facebookicon"
+              className="rounded-[30px] w-[50px] md:w-[80px]"
+              src={"/images/quantaLogo.jpg"}
+            />{" "}
+            <p className="text-white  md:text-auto  md:font-semibold">
+              QUANTA CLUB
+            </p>
+          </div>{" "}
+          <div className="flex items-center flex-col">
+            <img
+              alt="facebookicon"
+              className="rounded-[30px] w-[50px] md:w-[80px]"
+              src={"/images/archiLogo.png"}
+            />{" "}
+            <p className="text-white  md:text-auto  md:font-semibold">
+              ARCHI BÉNÉVOLES
+            </p>
+          </div>
         </div>
         <div className="w-[90%] h-[560px]">
           <video className="h-full w-full object-cover rounded-[20px]" controls>

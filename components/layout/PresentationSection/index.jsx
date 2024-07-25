@@ -38,42 +38,44 @@ function PresentationSection() {
           <div className="flex flex-col justify-around p-14 items-center w-[90%] md:w-[70%] h-[390px]">
             <a
               href="#Departement of Architecture"
-              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-customYellow"
+              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-customYellow p-3"
             >
               Département Architecture
             </a>
             <a
               href="#Department of Computer Science"
-              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-customYellow"
+              className="bg-customGrey w-[95%] min-h-8 p-3 rounded-[10px] text-center hover:bg-customYellow"
             >
               Département Informatique
             </a>
             <a
               href="#Department of Material Sciences"
-              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-customYellow"
+              className="bg-customGrey w-[95%] min-h-8 p-1 rounded-[10px] text-center hover:bg-customYellow"
             >
               Département Sciences de Matière
             </a>
             <a
               href="#Department of Mathematics"
-              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-customYellow"
+              className="bg-customGrey w-[95%] min-h-8 p-3 rounded-[10px] text-center hover:bg-customYellow"
             >
               Département Mathematics
             </a>
             <a
               href="#Departement of Natural & Life Science"
-              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-customYellow"
+              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] md:p-3 p-1 text-center hover:bg-customYellow"
             >
               Département Sciences de la Nature et de la Vie
             </a>
           </div>
         </div>
-        <div className="flex  justify-center items-center bg-customGrey w-[70%] md:w-[55%] md:h-[500px] h-[400px]  ml-3 relative z-20 bottom-0 rounded-[30px]">
-          <img
-            alt="triangle"
-            className="w-full h-full rounded-[30px]"
-            src={"/images/facLogo.jpg"}
-          />
+        <div className="flex  justify-center items-center  w-[70%] md:w-[55%] md:h-[500px] h-[400px]  ml-3 relative z-20 bottom-0 rounded-[30px]">
+          <a href="http://sciences.univ-alger.dz/" target="_blank">
+            <img
+              alt="triangle"
+              className="w-full h-full rounded-[30px]"
+              src={"/images/facLogo.jpg"}
+            />{" "}
+          </a>
         </div>
       </div>
       <div className="w-[100%] h-[250px] bg-customBlue z-0 absolute md:bottom-[-100px] bottom-[-150px] left-0 ">
