@@ -33,7 +33,7 @@ function RightVideoSection({
           <div className="flex flex-col items-start justify-between w-[90%] md:translate-y-0 translate-y-[-30px]  ">
             {licenceSpecialite && (
               <p className="md:text-[21px] xl:text-[27px] font-bold text-black">
-                Bachelor's Degree Specializations{" "}
+                Bachelor&apos;s Degree Specializations{" "}
               </p>
             )}
 
@@ -45,7 +45,7 @@ function RightVideoSection({
               ))}
             {masterSpecialite && (
               <p className="md:text-[21px] font-bold xl:text-[27px] text-black">
-                Masters's Degree Specializations{" "}
+                Masters&apos;s Degree Specializations{" "}
               </p>
             )}
 
