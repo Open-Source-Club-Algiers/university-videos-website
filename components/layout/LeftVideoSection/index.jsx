@@ -51,6 +51,9 @@ function LeftVideoSection({
                   <p className=" text-white">{specialite}</p>
                 </div>
               ))}
+            {licenceSpecialite && masterSpecialite && (
+              <hr className="my-4 w-full border-t-2 border-gray-300" />
+            )}
             {masterSpecialite && (
               <p className="md:text-[21px] font-bold   xl:text-[20px] text-white">
                 Masters&apos;s Degree Specializations{" "}

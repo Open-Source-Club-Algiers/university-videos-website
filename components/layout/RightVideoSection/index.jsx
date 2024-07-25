@@ -43,10 +43,15 @@ function RightVideoSection({
                   <p className=" text-black">{specialite}</p>
                 </div>
               ))}
+            {licenceSpecialite && masterSpecialite && (
+              <hr className="my-4 w-full border-t-2 border-gray-300" />
+            )}
             {masterSpecialite && (
-              <p className="md:text-[21px] font-bold xl:text-[27px] text-black">
-                Masters&apos;s Degree Specializations{" "}
-              </p>
+              <>
+                <p className="md:text-[21px] font-bold xl:text-[27px] text-black">
+                  Masters&apos;s Degree Specializations{" "}
+                </p>
+              </>
             )}
 
             {masterSpecialite &&

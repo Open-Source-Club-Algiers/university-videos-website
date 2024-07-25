@@ -24,8 +24,8 @@ function HeroSection() {
               className="rounded-full"
             />
           </div>
-          <h4 className="text-lg font-normal text-white">
-            Université d’Alger 1 <br /> Faculté des sciences
+          <h4 className="text-lg font-semibold text-white">
+            Faculty of sciences <br /> University of Algires 1
           </h4>
         </div>
       </div>
