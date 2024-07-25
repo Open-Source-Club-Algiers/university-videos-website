@@ -37,31 +37,31 @@ function PresentationSection() {
         <div className="w-[100%] flex flex-col md:flex-row-reverse justify-around items-center">
           <div className="flex flex-col justify-around p-14 items-center w-[90%] md:w-[70%] h-[390px]">
             <a
-              href="#Département Architecture"
+              href="#Departement of Architecture"
               className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-orange-500"
             >
               Département Architecture
             </a>
             <a
-              href="#Département Informatique"
+              href="#Department of Computer Science"
               className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-orange-500"
             >
               Département Informatique
             </a>
             <a
-              href="#Département Sciences de Matière"
+              href="#Department of Material Sciences"
               className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-orange-500"
             >
               Département Sciences de Matière
             </a>
             <a
-              href="#Département Mathématique"
+              href="#Department of Mathematics"
               className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-orange-500"
             >
               Département Mathematics
             </a>
             <a
-              href="#Département Sciences de la Nature et de la Vie"
+              href="#Departement of Natural & Life Science"
               className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-orange-500"
             >
               Département Sciences de la Nature et de la Vie
