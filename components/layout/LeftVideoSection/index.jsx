@@ -6,6 +6,7 @@ function LeftVideoSection({
   masterSpecialite = null,
   licenceSpecialite = null,
   videoLink = null,
+  docLink = null,
 }) {
   return (
     <section
@@ -17,8 +18,8 @@ function LeftVideoSection({
           {title}
         </h3>
       </div>
-      <div className="p-10 bg-black w-[95%] md:w-[80%] xl:w-[65%] md:h-[500px] h-[1100px] ml-[13%] ">
-        <div className=" bg-customGrey sm:h-[60%] h-[40%] md:h-[70%] w-[70%] md:w-[45%] rounded-[20px] absolute left-[20%] top-[22%] sm:top-[15%] md:top-auto md:left-[5%] bottom-12 flex justify-center items-center ">
+      <div className="p-10 bg-black w-[95%] md:w-[80%] xl:w-[65%] md:h-[500px] h-[700px] ml-[13%] ">
+        <div className="   h-[30%] md:h-auto md:translate-y-[-60px] translate-y-[-20px] w-[70%] md:w-[45%] rounded-[20px] absolute left-[20%] top-[22%] sm:top-[15%] md:top-auto md:left-[5%] bottom-12 flex justify-center items-center ">
           {videoLink ? (
             <video
               width="100%"
@@ -38,7 +39,18 @@ function LeftVideoSection({
             />
           )}
         </div>
-        <div className="  relative translate-y-[30%] md:translate-y-0 md:float-right h-full flex justify-center items-center flex-col">
+        <a
+          target="_blank"
+          href={docLink}
+          className="absolute  top-[130px] left-0   text-white px-4 py-2 "
+        >
+          <img
+            className="w-[30px] h-[30px] rounded-[5px] bg-white"
+            alt="getFileicon"
+            src="/images/fileIcon.png"
+          />
+        </a>
+        <div className="  relative translate-y-[25%] md:translate-y-0 md:float-right h-full flex justify-center items-center flex-col">
           <div className="flex flex-col items-start justify-between w-[100%] xl:ml-[0%] ml-[20%]">
             {licenceSpecialite && (
               <p className="md:text-[21px] font-bold xl:text-[20px] text-white">

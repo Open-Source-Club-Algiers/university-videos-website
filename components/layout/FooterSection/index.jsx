@@ -16,6 +16,36 @@ function FooterSection() {
             sports activities.
           </h3>
         </div>
+        <div className="w-[95%] flex justify-center items-center">
+          {" "}
+          <img
+            alt="openSourceLogoIconm"
+            height={120}
+            width={120}
+            src={"/images/oscLogo.png"}
+          />{" "}
+          <img
+            alt="facebookicon"
+            height={100}
+            width={100}
+            className="rounded-[20px]"
+            src={"/images/hbcLogo.png"}
+          />{" "}
+          <img
+            alt="facebookicon"
+            height={100}
+            width={100}
+            className="rounded-[20px]"
+            src={"/images/quantaLogo.png"}
+          />{" "}
+          <img
+            alt="facebookicon"
+            height={90}
+            width={90}
+            className="rounded-[20px]"
+            src={"/images/archiLogo.png"}
+          />{" "}
+        </div>
         <div className="w-[90%] h-[560px]">
           <video className="h-full w-full object-cover rounded-[20px]" controls>
             <source
@@ -41,7 +71,10 @@ function FooterSection() {
           </h3>
         </div>
         <div className="flex md:flex-col flex-row justify-center items-center">
-          <a href="https://www.instagram.com/open.source.club/">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/faculty_of_sciences_algiers1?igsh=M3hjeTRzcmYwZnA2"
+          >
             <img
               height={75}
               width={75}
@@ -50,7 +83,10 @@ function FooterSection() {
               src={"/images/instagramIcon.png"}
             />
           </a>
-          <a href="https://web.facebook.com/opensourceclubfb?locale=fr_FR">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/FaculteDesSciences2015?mibextid=ZbWKwL"
+          >
             <img
               alt="facebookicon"
               height={60}

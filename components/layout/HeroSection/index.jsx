@@ -12,17 +12,19 @@ function HeroSection() {
           objectFit="cover"
           className="z-0"
           aria-label="Hero Section Image"
-        />
+        />{" "}
       </div>
 
       <div className="relative z-10 flex items-center justify-between w-[90%] p-4 border-b border-white">
         <div className="flex items-center space-x-4">
           <div className="flex items-center justify-center max-h-[133px] max-w-[133px] rounded-full bg-transparent">
-            <img
-              src="/images/facLogo.jpg"
-              alt="Logo"
-              className="rounded-full"
-            />
+            <a href="http://sciences.univ-alger.dz/" target="_blank">
+              <img
+                src="/images/facLogo.jpg"
+                alt="Logo"
+                className="rounded-full"
+              />{" "}
+            </a>
           </div>
           <h4 className="text-lg font-semibold text-white">
             Faculty of sciences <br /> University of Algires 1

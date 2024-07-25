@@ -16,7 +16,7 @@ function PresentationSection() {
       </div>
 
       <div className="bg-black  w-[90%] h-[640px] float-end z-20 translate-y-[-75px]">
-        <div className=" flex justify-center items-center bg-customGrey w-[84%] h-[74%] absolute z-20 bottom-0 left-0 ml-14 translate-y-[-75px] rounded-[30px]">
+        <div className=" flex justify-center items-center bg-customGrey  md:h-auto h-[40%] md:w-3/4 absolute z-20 bottom-0 left-0 ml-14 md:translate-y-[-45px] translate-y-[-195px] rounded-[30px] ">
           <video
             width="100%"
             height="100%"
@@ -33,42 +33,42 @@ function PresentationSection() {
           </video>
         </div>
       </div>
-      <div className="w-[100%] flex flex-col md:flex-row-reverse justify-around items-center">
+      <div className="w-[100%] flex flex-col md:flex-row-reverse justify-around items-center md:p-12">
         <div className="w-[100%] flex flex-col md:flex-row-reverse justify-around items-center">
           <div className="flex flex-col justify-around p-14 items-center w-[90%] md:w-[70%] h-[390px]">
             <a
               href="#Departement of Architecture"
-              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-orange-500"
+              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-customYellow"
             >
               Département Architecture
             </a>
             <a
               href="#Department of Computer Science"
-              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-orange-500"
+              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-customYellow"
             >
               Département Informatique
             </a>
             <a
               href="#Department of Material Sciences"
-              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-orange-500"
+              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-customYellow"
             >
               Département Sciences de Matière
             </a>
             <a
               href="#Department of Mathematics"
-              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-orange-500"
+              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-customYellow"
             >
               Département Mathematics
             </a>
             <a
               href="#Departement of Natural & Life Science"
-              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-orange-500"
+              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-customYellow"
             >
               Département Sciences de la Nature et de la Vie
             </a>
           </div>
         </div>
-        <div className="flex  justify-center items-center bg-customGrey w-[70%] md:w-[55%] md:h-[569px] h-[400px]  ml-3 relative z-20 bottom-0 rounded-[30px]">
+        <div className="flex  justify-center items-center bg-customGrey w-[70%] md:w-[55%] md:h-[500px] h-[400px]  ml-3 relative z-20 bottom-0 rounded-[30px]">
           <img
             alt="triangle"
             className="w-full h-full rounded-[30px]"

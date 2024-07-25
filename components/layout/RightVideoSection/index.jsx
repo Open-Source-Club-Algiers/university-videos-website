@@ -6,6 +6,7 @@ function RightVideoSection({
   licenceSpecialite = null,
   masterSpecialite = null,
   videoLink = null,
+  docLink = null,
 }) {
   return (
     <section
@@ -17,8 +18,8 @@ function RightVideoSection({
           {title}
         </h3>
       </div>
-      <div className="p-10 bg-white w-[95%] md:w-[80%] xl:w-[65%] md:h-[500px] h-[1250px]  mr-[13%] ">
-        <div className=" bg-customGrey sm:h-[60%] h-[40%] md:h-[70%] w-[70%] md:w-[45%] rounded-[20px] absolute right-[20%] top-[22%] sm:top-[15%] md:top-auto md:right-[5%] bottom-12 flex justify-center items-center ">
+      <div className="p-10 bg-white w-[95%] md:w-[80%] xl:w-[65%] md:h-[450px] h-[750px]  mr-[13%] ">
+        <div className=" bg-customGrey  h-[30%] md:h-auto w-[70%] md:w-[45%] rounded-[20px] absolute right-[20%] top-[22%] sm:top-[15%] md:top-auto md:right-[5%] bottom-12 flex justify-center items-center md:translate-y-[-50px]">
           <video
             width="100%"
             height="100%"
@@ -29,7 +30,18 @@ function RightVideoSection({
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="  relative translate-y-[40%] md:translate-y-0 md:float-left h-full flex justify-center items-center flex-col">
+        <a
+          target="_blank"
+          href={docLink}
+          className="absolute  top-[130px] left-0   text-white px-4 py-2 "
+        >
+          <img
+            className="w-[30px] h-[30px] rounded-[5px] bg-white"
+            alt="getFileicon"
+            src="/images/fileIcon.png"
+          />
+        </a>
+        <div className="  relative translate-y-[30%] md:translate-y-0 md:float-left h-full flex justify-center items-center flex-col">
           <div className="flex flex-col items-start justify-between w-[90%] md:translate-y-0 translate-y-[-30px]  ">
             {licenceSpecialite && (
               <p className="md:text-[21px] xl:text-[27px] font-bold text-black">
