@@ -21,6 +21,9 @@ export default function ClientComponent() {
         videoLink={
           "https://firebasestorage.googleapis.com/v0/b/universityvideos-b5351.appspot.com/o/archiVideo.mp4?alt=media&token=5dcbc949-d4e9-4d92-931a-61f692be87d5"
         }
+        docLink={
+          "https://firebasestorage.googleapis.com/v0/b/universityvideos-b5351.appspot.com/o/d%C3%A9pliant%20Architecture%202024.pdf?alt=media&token=6a141ff0-0718-400e-a283-6f2cd745d8ef"
+        }
       />
       <RightVideoSection
         title={"Department of Computer Science"}
