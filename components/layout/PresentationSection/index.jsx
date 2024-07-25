@@ -4,10 +4,19 @@ import React from "react";
 function PresentationSection() {
   return (
     <section className=" bg-white relative z-0 h-full">
-      <div className="bg-customBlue w-[90%] h-[152px] z-10 relative"></div>
+      <div className="bg-customBlue w-[90%] h-[152px] z-10 relative flex flex-row items-center md:justify-start justify-center md:pl-[10%]">
+        <div>
+          <h1 className="text-white font-bold md:text-[30px] text-[20px]">
+            Dean of the Faculty
+          </h1>
+          <h1 className="text-white md:text-[30px] text-[20px]">
+            Dr. MAHDJOUB Mohamed Malik
+          </h1>
+        </div>{" "}
+      </div>
 
-      <div className="bg-black w-[90%] h-[640px] float-end z-20 translate-y-[-75px]">
-        <div className="flex justify-center items-center bg-customGrey w-[75%] h-[67%] absolute z-20 bottom-0 left-0 ml-14 translate-y-[-75px] rounded-[30px]">
+      <div className="bg-black  w-[90%] h-[640px] float-end z-20 translate-y-[-75px]">
+        <div className=" flex justify-center items-center bg-customGrey w-[84%] h-[74%] absolute z-20 bottom-0 left-0 ml-14 translate-y-[-75px] rounded-[30px]">
           <video
             width="100%"
             height="100%"
@@ -29,41 +38,41 @@ function PresentationSection() {
           <div className="flex flex-col justify-around p-14 items-center w-[90%] md:w-[70%] h-[390px]">
             <a
               href="#Département Architecture"
-              className="bg-customGrey w-[100%] min-h-8 rounded-[10px] text-center"
+              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-orange-500"
             >
               Département Architecture
             </a>
             <a
               href="#Département Informatique"
-              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center"
+              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-orange-500"
             >
               Département Informatique
             </a>
             <a
               href="#Département Sciences de Matière"
-              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center"
+              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-orange-500"
             >
               Département Sciences de Matière
             </a>
             <a
               href="#Département Mathématique"
-              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center"
+              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-orange-500"
             >
               Département Mathematics
             </a>
             <a
               href="#Département Sciences de la Nature et de la Vie"
-              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center"
+              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-orange-500"
             >
               Département Sciences de la Nature et de la Vie
             </a>
           </div>
         </div>
-        <div className="flex  justify-center items-center bg-customGrey w-[70%] md:w-[55%] h-[569px] ml-3 relative z-20 bottom-0 rounded-[30px]">
+        <div className="flex  justify-center items-center bg-customGrey w-[70%] md:w-[55%] md:h-[569px] h-[400px]  ml-3 relative z-20 bottom-0 rounded-[30px]">
           <img
             alt="triangle"
             className="w-full h-full rounded-[30px]"
-            src={"/images/Hero.png"}
+            src={"/images/facLogo.jpg"}
           />
         </div>
       </div>

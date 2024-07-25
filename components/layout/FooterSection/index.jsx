@@ -2,28 +2,68 @@ import React from "react";
 
 function FooterSection() {
   return (
-    <section className="flex flex-col justify-center items-center">
+    <section className=" mt-4 flex bg-customBlue flex-col justify-center items-center">
       <div className="w-full flex justify-center items-center">
         <h3 className="text-[25px] md:text-[30px] font-semibold">
-          CLUB SCIENTIFIQUES
+          Scientific Clubs
         </h3>
       </div>
-      <div className="h-[437px] bg-customBlue flex flex-col justify-start items-center">
+      <div className="h-[737px] flex flex-col  justify-around items-center">
         <div className="w-[90%] flex justify-center items-center">
-          <h3 className="text-[15px] md:text-[27px] font-semibold text-center">
-            La faculté en association avec les organisations estudiantines et
-            les clubs scientifiques organise et développe des activités
-            scientifiques, culturelles et sportives.
+          <h3 className="text-[15px] md:text-[27px] font-semibold text-center text-white">
+            The faculty, in association with student organizations and
+            scientific clubs, organizes and develops scientific, cultural, and
+            sports activities.
           </h3>
         </div>
-      </div>
-      <div className="w-full h-[437px] flex flex-col justify-start items-center">
-        <div className="w-[90%] flex justify-center items-center">
-          <h3 className="text-[25px] md:text-[30px] font-semibold text-center">
-            LES STATISTIQUES DE LA FACULTÉ
-          </h3>
+        <div className="w-[90%] h-[560px]">
+          <video className="h-full w-full object-cover rounded-[20px]" controls>
+            <source
+              src={
+                "https://firebasestorage.googleapis.com/v0/b/universityvideos-b5351.appspot.com/o/Untitled%20video%20-%20Made%20with%20Clipchamp%20(1).mp4?alt=media&token=65a838ab-548e-49f5-bfc2-a988d5b819e0"
+              }
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
+      <div className="w-full h-[437px] flex flex-col md:flex-row justify-start items-center bg-customBlue">
+        <div className="w-3/4 flex justify-between p-6  flex-col">
+          <h3 className="text-white font-semibold md:text-[30px] text-[20px]">
+            Contact Us
+          </h3>
+          <h3 className="text-white font-semibold md:text-[30px] text-[20px]">
+            sciences.univ-alger.dz <br />
+            contact@univ-alger.dz <br /> +213 (0) 21 63 77 65 02
+            <br />
+            Didouche Mourad Street, Algiers.
+          </h3>
+        </div>
+        <div className="flex md:flex-col flex-row justify-center items-center">
+          <a href="https://www.instagram.com/open.source.club/">
+            <img
+              height={75}
+              width={75}
+              alt="instaIcon"
+              className="m-4"
+              src={"/images/instagramIcon.png"}
+            />
+          </a>
+          <a href="https://web.facebook.com/opensourceclubfb?locale=fr_FR">
+            <img
+              alt="facebookicon"
+              height={60}
+              width={60}
+              src={"/images/FacebookIcon.png"}
+            />{" "}
+          </a>
+        </div>
+      </div>
+      <span className="font-extrabold text-orange-500">made by</span>
+      <a href="https://discord.gg/MGgAf58w">
+        <img alt="oscLogo" src="/images/oscLogo.png" />{" "}
+      </a>
     </section>
   );
 }

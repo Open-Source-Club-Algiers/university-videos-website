@@ -1,7 +1,12 @@
 import Image from "next/image";
 import React from "react";
 
-function LeftVideoSection({ title, filiere, Specialite, videoLink = null }) {
+function LeftVideoSection({
+  title,
+  masterSpecialite = null,
+  licenceSpecialite = null,
+  videoLink = null,
+}) {
   return (
     <section
       id={title}
@@ -12,8 +17,8 @@ function LeftVideoSection({ title, filiere, Specialite, videoLink = null }) {
           {title}
         </h3>
       </div>
-      <div className="p-10 bg-black w-[95%] md:w-[80%] xl:w-[65%] h-[498px] ml-[13%] ">
-        <div className=" bg-customGrey sm:h-[60%] h-[50%] md:h-[70%] w-[70%] md:w-[45%] rounded-[20px] absolute left-[20%] top-[22%] sm:top-[15%] md:top-auto md:left-[5%] bottom-12 flex justify-center items-center ">
+      <div className="p-10 bg-black w-[95%] md:w-[80%] xl:w-[65%] md:h-[500px] h-[1100px] ml-[13%] ">
+        <div className=" bg-customGrey sm:h-[60%] h-[40%] md:h-[70%] w-[70%] md:w-[45%] rounded-[20px] absolute left-[20%] top-[22%] sm:top-[15%] md:top-auto md:left-[5%] bottom-12 flex justify-center items-center ">
           {videoLink ? (
             <video
               width="100%"
@@ -33,19 +38,30 @@ function LeftVideoSection({ title, filiere, Specialite, videoLink = null }) {
             />
           )}
         </div>
-        <div className="  relative translate-y-[40%] md:translate-y-0 md:float-right h-full flex justify-center items-center flex-col">
-          <p className="md:text-[21px] xl:text-[27px] text-white">
-            Carte des formations en Licence
-          </p>
-          <div className="flex flex-col items-start justify-between w-[90%]">
-            <div className="w-[100%] flex flex-row items-start justify-around">
-              <p className=" text-white">Filière</p>
-              <p className=" text-white">Spécialité</p>
-            </div>
-            <div className=" w-[100%] flex flex-row items-center justify-around">
-              {/* <p className=" text-white">{filiere}</p>
-              <p className=" text-white">{Specialite}</p> */}
-            </div>
+        <div className="  relative translate-y-[30%] md:translate-y-0 md:float-right h-full flex justify-center items-center flex-col">
+          <div className="flex flex-col items-start justify-between w-[100%] xl:ml-[0%] ml-[20%]">
+            {licenceSpecialite && (
+              <p className="md:text-[21px] font-bold xl:text-[20px] text-white">
+                Bachelor's Degree Specializations{" "}
+              </p>
+            )}
+            {licenceSpecialite &&
+              licenceSpecialite.map((specialite, index) => (
+                <div key={index} className="ml-4 mt-1">
+                  <p className=" text-white">{specialite}</p>
+                </div>
+              ))}
+            {masterSpecialite && (
+              <p className="md:text-[21px] font-bold   xl:text-[20px] text-white">
+                Masters's Degree Specializations{" "}
+              </p>
+            )}
+            {masterSpecialite &&
+              masterSpecialite.map((specialite, index) => (
+                <div key={index} className="ml-4 mt-1">
+                  <p className=" text-white">{specialite}</p>
+                </div>
+              ))}{" "}
           </div>
         </div>
       </div>
