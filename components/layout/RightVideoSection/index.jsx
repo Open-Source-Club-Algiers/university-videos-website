@@ -68,7 +68,7 @@ function RightVideoSection({
           />
           Download leaflet
         </a>
-        <div className="lg:translate-x-[10%] xl:translate-x-[20%]  lg:max-h-[370px] h-[285px]     lg:w-[520px]  xl:w-[700px] rounded-[20px] flex justify-center items-center ">
+        <div className="lg:translate-x-[20%] xl:translate-x-[20%]  lg:max-h-[370px] h-[285px]     lg:w-[620px]  xl:w-[700px] rounded-[20px] flex justify-center items-center ">
           <video
             width="100%"
             height="100%"
