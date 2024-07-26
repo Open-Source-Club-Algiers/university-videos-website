@@ -13,31 +13,22 @@ function LeftVideoSection({
       id={title}
       className=" bg-white relative z-0 mt-[130px] lg:mt-[70px] flex flex-col justify-center items-center pb-5"
     >
-      <div className="flex justify-center items-center w-[100%]">
+      <div className="flex justify-center items-center w-[90%]">
         <h3 className="font-bold text-[26px] lg:text-[35px] mt-6 mb-6">
           {title}
         </h3>
       </div>
-      <div className="p-10 bg-black w-[95%] lg:w-[80%] xl:w-[65%] lg:h-[500px] h-[700px] ml-[13%] ">
-        <div className="   lg:max-h-[350px] h-[285px]   lg:translate-y-[-60px] translate-y-[-20px] w-[70%] lg:w-[500px] rounded-[20px] absolute left-[20%] top-[22%] sm:top-[15%] lg:top-auto lg:left-[5%] bottom-12 flex justify-center items-center ">
-          {videoLink ? (
-            <video
-              width="100%"
-              height="100%"
-              className="h-full w-full object-cover rounded-[20px]"
-              controls
-            >
-              <source src={videoLink} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          ) : (
-            <Image
-              width={60}
-              height={60}
-              alt="run-icon"
-              src="/images/gravity-ui_triangle-right.png"
-            />
-          )}
+      <div className="p-10 bg-black w-[95%] lg:w-[80%] xl:w-[65%] lg:h-[500px] h-[740px] ml-[13%] ">
+        <div className="   lg:max-h-[370px] h-[285px]   lg:translate-y-[-60px] translate-y-[-20px] w-[70%] md:w-[520px]  xl:w-[590px] rounded-[20px] absolute left-[20%] top-[22%] sm:top-[15%] lg:top-auto lg:left-[5%] bottom-12 flex justify-center items-center ">
+          <video
+            width="100%"
+            height="100%"
+            className="h-full w-full object-cover rounded-[20px]"
+            controls
+          >
+            <source src={videoLink} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
           <a
             target="_blank"
             href={docLink}
@@ -59,12 +50,14 @@ function LeftVideoSection({
                 Bachelor&apos;s Degree Specializations{" "}
               </p>
             )}
-            {licenceSpecialite &&
-              licenceSpecialite.map((specialite, index) => (
-                <div key={index} className="ml-4 mt-1">
-                  <p className=" text-white">{specialite}</p>
-                </div>
-              ))}
+            <ul className="list-disc ml-5">
+              {licenceSpecialite &&
+                licenceSpecialite.map((specialite, index) => (
+                  <li key={index} className="ml-4 mt-1 text-white">
+                    {specialite}
+                  </li>
+                ))}
+            </ul>
             {licenceSpecialite && masterSpecialite && (
               <hr className="my-4 w-full border-t-2 border-gray-300" />
             )}
@@ -72,13 +65,15 @@ function LeftVideoSection({
               <p className="lg:text-[21px] font-bold   xl:text-[20px] text-white">
                 Masters&apos;s Degree Specializations{" "}
               </p>
-            )}
-            {masterSpecialite &&
-              masterSpecialite.map((specialite, index) => (
-                <div key={index} className="ml-4 mt-1">
-                  <p className=" text-white">{specialite}</p>
-                </div>
-              ))}{" "}
+            )}{" "}
+            <ul className="list-disc ml-5">
+              {masterSpecialite &&
+                masterSpecialite.map((specialite, index) => (
+                  <li key={index} className="ml-4 mt-1 text-white">
+                    {specialite}
+                  </li>
+                ))}
+            </ul>
           </div>
         </div>
       </div>
