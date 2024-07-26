@@ -18,8 +18,8 @@ function LeftVideoSection({
           {title}
         </h3>
       </div>
-      <div className="p-3 bg-black w-[95%] lg:w-[90%] xl:w-[930px] lg:h-[550px] h-[760px]  mr-[13%] flex flex-col lg:flex-row justify-center items-center  ">
-        <div className="xl:translate-x-[-18%]  lg:translate-x-[-1%]  lg:max-h-[370px] h-[285px]    translate-y-[-20px]  lg:w-[520px]  xl:w-[700px] rounded-[20px]  flex justify-center items-center ">
+      <div className=" ml-[190px] p-3 bg-black w-[95%] lg:w-[83%] xl:w-[860px] lg:h-[550px] h-[760px]  mr-[13%] flex flex-col lg:flex-row justify-center items-center  ">
+        <div className="xl:translate-x-[-18%]  lg:translate-x-[-23%]  lg:max-h-[370px] h-[285px]    translate-y-[-20px]  lg:w-[620px]  xl:w-[700px] rounded-[20px]  flex justify-center items-center ">
           <video
             width="100%"
             height="100%"
@@ -55,7 +55,7 @@ function LeftVideoSection({
           Download leaflet
         </a>
 
-        <div className="  relative  lg:translate-y-[50px] lg:float-right flex justify-center items-center flex-col">
+        <div className=" mr-4 relative  lg:translate-y-[50px] lg:float-right flex justify-center items-center flex-col">
           <div className="flex flex-col items-start justify-between w-[100%] xl:ml-[0%] ml-[20%]">
             {licenceSpecialite && (
               <p className="lg:text-[21px] font-bold xl:text-[20px] text-white">
