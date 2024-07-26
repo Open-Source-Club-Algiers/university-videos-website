@@ -35,34 +35,34 @@ function PresentationSection() {
       </div>
       <div className="w-[100%] flex flex-col md:flex-row-reverse justify-around items-center md:p-12">
         <div className="w-[100%] flex flex-col md:flex-row-reverse justify-around items-center">
-          <div className="flex flex-col justify-around p-14 items-center w-[90%] md:w-[70%] h-[390px]">
+          <div className="flex flex-col justify-around p-14 items-center w-[90%] md:w-[70%] h-[400px]">
             <a
               href="#Departement of Architecture"
-              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] text-center hover:bg-customYellow p-3"
+              className="bg-customGrey w-[95%]  rounded-[10px] text-center hover:bg-customYellow p-3"
             >
               Département Architecture
             </a>
             <a
               href="#Department of Computer Science"
-              className="bg-customGrey w-[95%] min-h-8 p-3 rounded-[10px] text-center hover:bg-customYellow"
+              className="bg-customGrey w-[95%]  p-3 rounded-[10px] text-center hover:bg-customYellow"
             >
               Département Informatique
             </a>
             <a
               href="#Department of Material Sciences"
-              className="bg-customGrey w-[95%] min-h-8 p-1 rounded-[10px] text-center hover:bg-customYellow"
+              className="bg-customGrey w-[95%]  p-3 rounded-[10px] text-center hover:bg-customYellow"
             >
               Département Sciences de Matière
             </a>
             <a
               href="#Department of Mathematics"
-              className="bg-customGrey w-[95%] min-h-8 p-3 rounded-[10px] text-center hover:bg-customYellow"
+              className="bg-customGrey w-[95%]  p-3 rounded-[10px] text-center hover:bg-customYellow"
             >
               Département Mathematics
             </a>
             <a
               href="#Departement of Natural & Life Science"
-              className="bg-customGrey w-[95%] min-h-8 rounded-[10px] md:p-3 p-1 text-center hover:bg-customYellow"
+              className="bg-customGrey w-[95%]  rounded-[10px] md:p-4 p-1 text-center hover:bg-customYellow"
             >
               Département Sciences de la Nature et de la Vie
             </a>

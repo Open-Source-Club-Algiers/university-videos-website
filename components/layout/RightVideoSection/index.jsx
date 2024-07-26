@@ -19,42 +19,6 @@ function RightVideoSection({
         </h3>
       </div>
       <div className="p-3 bg-white w-[95%] lg:w-[80%] xl:w-[860px] lg:h-[550px] h-[760px]  mr-[13%] flex flex-col lg:flex-row justify-center items-center  ">
-        <div className="lg:translate-x-[-10%] xl:translate-x-[-20%]  lg:max-h-[370px] h-[285px]     lg:w-[520px]  xl:w-[590px] rounded-[20px] flex justify-center items-center ">
-          <video
-            width="100%"
-            height="100%"
-            className="h-full w-full object-cover rounded-[20px]"
-            controls
-          >
-            <source src={videoLink} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <a
-            target="_blank"
-            href={docLink}
-            className="hidden lg:block lg:absolute  bottom-[290px] right-0   text-white px-4 py-2 "
-          >
-            <img
-              className="w-[30px] h-[30px] rounded-[5px] bg-white"
-              alt="getFileicon"
-              src="/images/fileIcon.png"
-            />
-            Download leaflet
-          </a>
-        </div>
-        <a
-          target="_blank"
-          href={docLink}
-          className="lg:hidden block  text-blck px-4 py-2 "
-        >
-          <img
-            className="w-[30px] h-[30px] rounded-[5px] "
-            alt="getFileicon"
-            src="/images/fileIcon.png"
-          />
-          Download leaflet
-        </a>
-
         <div className="  relative mt-4 lg:mt-0 flex justify-center items-center flex-col">
           <div className="flex flex-col items-start justify-between w-[90%] lg:translate-y-0 translate-y-[-30px]  ">
             {licenceSpecialite && (
@@ -91,6 +55,41 @@ function RightVideoSection({
                 ))}
             </ul>
           </div>
+        </div>
+        <a
+          target="_blank"
+          href={docLink}
+          className="lg:hidden block  text-blck px-4 py-2 "
+        >
+          <img
+            className="w-[30px] h-[30px] rounded-[5px] "
+            alt="getFileicon"
+            src="/images/fileIcon.png"
+          />
+          Download leaflet
+        </a>
+        <div className="lg:translate-x-[10%] xl:translate-x-[20%]  lg:max-h-[370px] h-[285px]     lg:w-[520px]  xl:w-[700px] rounded-[20px] flex justify-center items-center ">
+          <video
+            width="100%"
+            height="100%"
+            className="h-full w-full object-cover rounded-[20px]"
+            controls
+          >
+            <source src={videoLink} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <a
+            target="_blank"
+            href={docLink}
+            className="hidden lg:block lg:absolute left-0 bottom-[290px] right-0   text-black px-4 py-2 "
+          >
+            <img
+              className="w-[30px] h-[30px] rounded-[5px] bg-white"
+              alt="getFileicon"
+              src="/images/fileIcon.png"
+            />
+            Download leaflet
+          </a>
         </div>
       </div>
     </section>
