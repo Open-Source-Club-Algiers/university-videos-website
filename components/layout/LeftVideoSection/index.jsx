@@ -18,8 +18,8 @@ function LeftVideoSection({
           {title}
         </h3>
       </div>
-      <div className="p-10 bg-black w-[95%] lg:w-[80%] xl:w-[65%] lg:h-[500px] h-[740px] ml-[13%] ">
-        <div className="   lg:max-h-[370px] h-[285px]   lg:translate-y-[-60px] translate-y-[-20px] w-[70%] md:w-[520px]  xl:w-[590px] rounded-[20px] absolute left-[20%] top-[22%] sm:top-[15%] lg:top-auto lg:left-[5%] bottom-12 flex justify-center items-center ">
+      <div className="p-3 bg-black w-[95%] lg:w-[90%] xl:w-[930px] lg:h-[550px] h-[760px]  mr-[13%] flex flex-col lg:flex-row justify-center items-center  ">
+        <div className="xl:translate-x-[-18%]  lg:translate-x-[-1%]  lg:max-h-[370px] h-[285px]    translate-y-[-20px]  lg:w-[520px]  xl:w-[700px] rounded-[20px]  flex justify-center items-center ">
           <video
             width="100%"
             height="100%"
@@ -32,7 +32,7 @@ function LeftVideoSection({
           <a
             target="_blank"
             href={docLink}
-            className="absolute  bottom-[290px] right-0   text-white px-4 py-2 "
+            className="hidden lg:block lg:absolute  bottom-[290px] right-0   text-white px-4 py-2 "
           >
             <img
               className="w-[30px] h-[30px] rounded-[5px] bg-white"
@@ -42,8 +42,20 @@ function LeftVideoSection({
             Download leaflet
           </a>
         </div>
+        <a
+          target="_blank"
+          href={docLink}
+          className="lg:hidden block  text-white px-4 py-2 "
+        >
+          <img
+            className="w-[30px] h-[30px] rounded-[5px] bg-white"
+            alt="getFileicon"
+            src="/images/fileIcon.png"
+          />
+          Download leaflet
+        </a>
 
-        <div className="  relative translate-y-[25%] lg:translate-y-0 lg:float-right h-full flex justify-center items-center flex-col">
+        <div className="  relative  lg:translate-y-[50px] lg:float-right flex justify-center items-center flex-col">
           <div className="flex flex-col items-start justify-between w-[100%] xl:ml-[0%] ml-[20%]">
             {licenceSpecialite && (
               <p className="lg:text-[21px] font-bold xl:text-[20px] text-white">
