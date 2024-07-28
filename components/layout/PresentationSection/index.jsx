@@ -3,20 +3,19 @@ import React from "react";
 
 function PresentationSection() {
   return (
-    <section className=" bg-white relative z-0 h-full">
-      <div className="bg-customBlue w-[90%] h-[152px] z-10 relative flex flex-row items-center md:justify-start justify-center md:pl-[10%]">
-        <div>
-          <h1 className="text-white font-bold md:text-[30px] text-[20px]">
-            Dean of the Faculty
-          </h1>
-          <h1 className="text-white md:text-[30px] text-[20px]">
-            Dr. MAHDJOUB Mohamed Malik
-          </h1>
-        </div>{" "}
-      </div>
-
-      <div className="bg-black  w-[90%] h-[640px] float-end z-20 translate-y-[-75px]">
-        <div className=" flex justify-center items-center bg-customGrey  md:h-auto h-[40%] md:w-3/4 absolute z-20 bottom-0 left-0 ml-14 md:translate-y-[-45px] translate-y-[-195px] rounded-[30px] ">
+    <section className=" bg-white relative z-0 ">
+      <div className="bg-black  w-[90%]  float-end z-20  flex items-center justify-center flex-col">
+        <div className="bg-customBlue w-full  mb-4 z-10 relative flex flex-row items-center md:justify-start justify-center md:pl-[10%] translate-x-[-20px] md:translate-x-[-100px]">
+          <div>
+            <h1 className="text-white font-bold md:text-[30px] text-[20px]">
+              Dean of the Faculty
+            </h1>
+            <h1 className="text-white md:text-[30px] text-[20px]">
+              Dr. MAHDJOUB Mohamed Malik
+            </h1>
+          </div>{" "}
+        </div>
+        <div className=" flex justify-center items-center bg-customGrey  md:h-auto h-[50%] md:w-3/4  z-20 md:ml-14 ml-1 mr-1 md:mr-0 rounded-[30px] ">
           <video
             width="100%"
             height="100%"
@@ -68,17 +67,17 @@ function PresentationSection() {
             </a>
           </div>
         </div>
-        <div className="flex  justify-center items-center  w-[70%] md:w-[55%] md:h-[500px] h-[400px]  ml-3 relative z-20 bottom-0 rounded-[30px]">
+        <div className="flex  justify-center items-center  max-w-[40%] translate-y-[20%]    ml-3 relative z-20 bottom-0 rounded-[30px]">
           <a href="http://sciences.univ-alger.dz/" target="_blank">
             <img
               alt="triangle"
-              className="w-full h-full rounded-[30px]"
+              className="  rounded-[30px]"
               src={"/images/facLogo.jpg"}
             />{" "}
           </a>
         </div>
       </div>
-      <div className="w-[100%] h-[250px] bg-customBlue z-0 absolute md:bottom-[-100px] bottom-[-150px] left-0 ">
+      <div className="w-[100%] h-[250px] bg-customBlue z-0  md:bottom-[-100px] bottom-[-150px] left-0 ">
         <div className="absolute right-[10%] bottom-9 text-start text-white text-inter font-medium text-[12px] md:text-[15px] xl:text-[25px]">
           THE FACULTY OF SCIENCES IS PARTICULARLY <br />
           RESPONSIBLE FOR THE PROMOTION OF:

@@ -80,7 +80,7 @@ function FooterSection() {
             sciences.univ-alger.dz <br />
             contact@univ-alger.dz <br /> +213 (0) 21 63 77 65 02
             <br />
-            Didouche Mourad Street, Algiers.
+            02 Didouche Mourad Street, Algiers.
           </h3>
         </div>
         <div className="flex md:flex-col flex-row justify-center items-center">
@@ -110,9 +110,7 @@ function FooterSection() {
         </div>
       </div>
       <span className="font-extrabold text-orange-500">made by</span>
-      <a href="https://discord.gg/MGgAf58w">
-        <img alt="oscLogo" src="/images/oscLogo.png" />{" "}
-      </a>
+      <img alt="oscLogo" src="/images/oscLogo.png" />{" "}
     </section>
   );
 }

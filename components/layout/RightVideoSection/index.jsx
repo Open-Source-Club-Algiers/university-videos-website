@@ -18,7 +18,7 @@ function RightVideoSection({
           {title}
         </h3>
       </div>
-      <div className="p-3 bg-white w-[95%] lg:w-[80%] xl:w-[860px] lg:h-[550px] h-[760px]  mr-[13%] flex flex-col lg:flex-row justify-center items-center  ">
+      <div className="p-3 bg-white w-full lg:w-[80%] xl:w-[860px] lg:h-[550px] h-[760px]  md:mr-[13%] flex flex-col lg:flex-row justify-center items-center  ">
         <div className="  relative mt-4 lg:mt-0 flex justify-center items-center flex-col">
           <div className="flex flex-col items-start justify-between w-[90%] lg:translate-y-0 translate-y-[-30px]  ">
             {licenceSpecialite && (
@@ -59,10 +59,10 @@ function RightVideoSection({
         <a
           target="_blank"
           href={docLink}
-          className="lg:hidden block  text-blck px-4 py-2 "
+          className="lg:hidden block  text-blck px-4 py-2 text-customYellow "
         >
           <img
-            className="w-[30px] h-[30px] rounded-[5px] "
+            className="w-[30px] h-[30px] bg-customYellow rounded-[5px] "
             alt="getFileicon"
             src="/images/fileIcon.png"
           />
@@ -81,10 +81,10 @@ function RightVideoSection({
           <a
             target="_blank"
             href={docLink}
-            className="hidden lg:block lg:absolute left-0 bottom-[290px] right-0   text-black px-4 py-2 "
+            className="hidden lg:block lg:absolute left-0 bottom-[290px] right-0   text-customYellow px-4 py-2 "
           >
             <img
-              className="w-[30px] h-[30px] rounded-[5px] bg-white"
+              className="w-[30px] h-[30px] rounded-[5px] bg-customYellow"
               alt="getFileicon"
               src="/images/fileIcon.png"
             />

@@ -18,7 +18,7 @@ function LeftVideoSection({
           {title}
         </h3>
       </div>
-      <div className=" ml-[190px] p-3 bg-black w-[95%] lg:w-[83%] xl:w-[860px] lg:h-[550px] h-[760px]  mr-[13%] flex flex-col lg:flex-row justify-center items-center  ">
+      <div className=" md:ml-[190px] p-3 bg-black w-full md:w-[95%] lg:w-[83%] xl:w-[860px] lg:h-[550px] h-[760px]   flex flex-col lg:flex-row justify-center items-center  ">
         <div className="xl:translate-x-[-18%]  lg:translate-x-[-23%]  lg:max-h-[370px] h-[285px]    translate-y-[-20px]  lg:w-[620px]  xl:w-[700px] rounded-[20px]  flex justify-center items-center ">
           <video
             width="100%"
@@ -32,10 +32,10 @@ function LeftVideoSection({
           <a
             target="_blank"
             href={docLink}
-            className="hidden lg:block lg:absolute  bottom-[290px] right-0   text-white px-4 py-2 "
+            className="hidden lg:block lg:absolute  bottom-[290px] right-0   text-customYellow px-4 py-2 "
           >
             <img
-              className="w-[30px] h-[30px] rounded-[5px] bg-white"
+              className="w-[30px] h-[30px] rounded-[5px] bg-customYellow"
               alt="getFileicon"
               src="/images/fileIcon.png"
             />
@@ -45,10 +45,10 @@ function LeftVideoSection({
         <a
           target="_blank"
           href={docLink}
-          className="lg:hidden block  text-white px-4 py-2 "
+          className="lg:hidden block  text-customYellow px-4 py-2 "
         >
           <img
-            className="w-[30px] h-[30px] rounded-[5px] bg-white"
+            className="w-[30px] h-[30px] rounded-[5px] bg-customYellow"
             alt="getFileicon"
             src="/images/fileIcon.png"
           />
