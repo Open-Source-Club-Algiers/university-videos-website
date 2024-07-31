@@ -7,6 +7,7 @@ function RightVideoSection({
   masterSpecialite = null,
   videoLink = null,
   docLink = null,
+  imgLink = null,
 }) {
   return (
     <section
@@ -18,11 +19,24 @@ function RightVideoSection({
           {title}
         </h3>
       </div>
-      <div className="p-3 bg-white w-full lg:w-[80%] xl:w-[860px] lg:h-[550px] h-[760px]  md:mr-[13%] flex flex-col lg:flex-row justify-center items-center  ">
-        <div className="  relative mt-4 lg:mt-0 flex justify-center items-center flex-col">
+      <div className="p-3  w-full lg:w-[80%] xl:w-[860px] lg:h-[550px] h-[760px]  md:mr-[13%] flex flex-col lg:flex-row justify-center items-center relative">
+        <Image
+          src={imgLink}
+          alt="Background Image"
+          layout="fill"
+          objectFit="cover"
+          className="z-0 filter blur-[4px]"
+        />
+        <div className="relative z-10 mt-4 lg:mt-0 flex justify-center items-center flex-col">
           <div className="flex flex-col items-start justify-between w-[90%] lg:translate-y-0 translate-y-[-30px]  ">
             {licenceSpecialite && (
-              <p className="lg:text-[21px] xl:text-[23px] font-bold text-black">
+              <p
+                className={`lg:text-[21px] xl:text-[23px] font-bold ${
+                  title === "Department of Computer Science"
+                    ? "text-white"
+                    : "text-black"
+                }`}
+              >
                 Bachelor&apos;s Degree Specializations
               </p>
             )}
@@ -30,7 +44,14 @@ function RightVideoSection({
             <ul className="list-disc ml-5">
               {licenceSpecialite &&
                 licenceSpecialite.map((specialite, index) => (
-                  <li key={index} className="ml-4  text-black">
+                  <li
+                    key={index}
+                    className={`ml-4  ${
+                      title === "Department of Computer Science"
+                        ? "text-white"
+                        : "text-black"
+                    }`}
+                  >
                     {specialite}
                   </li>
                 ))}
@@ -40,7 +61,14 @@ function RightVideoSection({
             )}
             {masterSpecialite && (
               <>
-                <p className="lg:text-[21px] font-bold xl:text-[22px] text-black">
+                <p
+                  className={`lg:text-[21px] font-bold xl:text-[22px] ${
+                    title === "Department of Computer Science"
+                      ? "text-white"
+                      : "text-black"
+                  }`}
+                >
+                  {" "}
                   Masters&apos;s Degree Specializations
                 </p>
               </>
@@ -49,7 +77,14 @@ function RightVideoSection({
             <ul className="list-disc ml-5">
               {masterSpecialite &&
                 masterSpecialite.map((specialite, index) => (
-                  <li key={index} className="ml-4  text-black">
+                  <li
+                    key={index}
+                    className={` ml-4  ${
+                      title === "Department of Computer Science"
+                        ? "text-white"
+                        : "text-black"
+                    }`}
+                  >
                     {specialite}
                   </li>
                 ))}

@@ -19,41 +19,62 @@ function FooterSection() {
         <div className="w-[95%] flex justify-around items-center">
           {" "}
           <div className="flex items-center flex-col">
-            <img
-              alt="openSourceLogoIconm"
-              className="rounded-[30px] w-[50px] md:w-[80px]"
-              src={"/images/oscLogo.jpg"}
-            />{" "}
+            <a
+              target="_blank"
+              href="https://linktr.ee/open.source.club?fbclid=PAZXh0bgNhZW0CMTEAAaYqTv7jdS-SBUpnQGYGjunC0oeMmZnd6dnNxvsXUfSG81MZ6WL3QddQr1I_aem_OUS31CPn0ND7MUV4PaSoiw"
+            >
+              <img
+                alt="openSourceLogoIconm"
+                className="rounded-[30px] w-[50px] md:w-[80px]"
+                src={"/images/oscLogo.jpg"}
+              />{" "}
+            </a>
             <p className="text-white  md:text-auto  md:font-semibold">
               OPEN SOURCE
             </p>
           </div>{" "}
           <div className="flex items-center flex-col">
-            <img
-              alt="facebookicon"
-              className="rounded-[30px] w-[50px] md:w-[80px]"
-              src={"/images/hbcLogo.jpg"}
-            />{" "}
+            <a
+              target="_blank"
+              href="https://linktr.ee/hopebudsclub?fbclid=PAZXh0bgNhZW0CMTEAAaYoOl3arBWmPsG4KQmIumBhMmfEYLqAwFWglfBTr2jQD6YKm0tp0BWitYk_aem_ftcF-Ha5BydyTnemBBq98g"
+            >
+              {" "}
+              <img
+                alt="facebookicon"
+                className="rounded-[30px] w-[50px] md:w-[80px]"
+                src={"/images/hbcLogo.jpg"}
+              />{" "}
+            </a>
             <p className="text-white  md:text-auto  md:font-semibold">
               HOPE BUDS CLUB
             </p>
           </div>{" "}
           <div className="flex items-center flex-col">
-            <img
-              alt="facebookicon"
-              className="rounded-[30px] w-[50px] md:w-[80px]"
-              src={"/images/quantaLogo.jpg"}
-            />{" "}
-            <p className="text-white  md:text-auto  md:font-semibold">
-              QUANTA CLUB
-            </p>
+            <a
+              target="_blank"
+              href="https://linktr.ee/quantaclubdz?fbclid=PAZXh0bgNhZW0CMTEAAabQYQFK3ucMV1rQYVqn1ipSLARfv87Ja3eyDTfxAVTLSoy_4pl2dm_ykrU_aem_5QEsPnkEalLjdTRobsnM3A"
+            >
+              <img
+                alt="facebookicon"
+                className="rounded-[30px] w-[50px] md:w-[80px]"
+                src={"/images/quantaLogo.jpg"}
+              />{" "}
+              <p className="text-white  md:text-auto  md:font-semibold">
+                QUANTA CLUB
+              </p>{" "}
+            </a>
           </div>{" "}
           <div className="flex items-center flex-col">
-            <img
-              alt="facebookicon"
-              className="rounded-[30px] w-[50px] md:w-[80px]"
-              src={"/images/archiLogo.png"}
-            />{" "}
+            <a
+              target="_blank"
+              href="https://www.instagram.com/archibenevoles?igsh=MWxyMXpqOWNkNWp1Zw=="
+            >
+              <img
+                alt="facebookicon"
+                className="rounded-[30px] w-[50px] md:w-[80px]"
+                src={"/images/archiLogo.png"}
+              />{" "}
+            </a>
             <p className="text-white  md:text-auto  md:font-semibold">
               ARCHI BÉNÉVOLES
             </p>

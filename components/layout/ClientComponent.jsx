@@ -12,6 +12,7 @@ export default function ClientComponent() {
       <HeroSection />
       <PresentationSection />
       <LeftVideoSection
+        imgLink={"/images/archi.jpg"}
         title={"Departement of Architecture"}
         licenceSpecialite={[
           "Urban Habitats and Policies",
@@ -26,6 +27,7 @@ export default function ClientComponent() {
         }
       />
       <RightVideoSection
+        imgLink={"/images/computerscience.webp"}
         title={"Department of Computer Science"}
         licenceSpecialite={[
           "Computer Systems ",
@@ -44,6 +46,7 @@ export default function ClientComponent() {
         }
       />
       <LeftVideoSection
+        imgLink={"/images/math.jpg"}
         title={"Department of Mathematics"}
         licenceSpecialite={["Fundamental Mathematics", " Applied Mathematics "]}
         masterSpecialite={[
@@ -58,6 +61,7 @@ export default function ClientComponent() {
         }
       />
       <RightVideoSection
+        imgLink={"/images/snv.webp"}
         title={"Departement of Natural & Life Science"}
         licenceSpecialite={[
           "Ecology & Environnement",
@@ -81,6 +85,7 @@ export default function ClientComponent() {
         }
       />
       <LeftVideoSection
+        imgLink={"/images/sm.webp"}
         title={"Department of Material Sciences"}
         licenceSpecialite={[
           "Pharmaceutical Chemistry",
